@@ -1,9 +1,9 @@
 const mongoose = require('mongoose');
 
 const recipeSchema = new mongoose.Schema({
-  title: String,
-  ingredients: [String],
-  instructions: String,
+  title: { type: String, required: true },
+  ingredients: { type: [String], required: true },
+  instructions: { type: String, required: true },
 });
 
 const Recipe = mongoose.model('Recipe', recipeSchema);

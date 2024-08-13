@@ -1,11 +1,11 @@
 const mongoose = require('mongoose');
 
 const cookingTipSchema = new mongoose.Schema({
-  tip: String,
-  author: String,
+  tip: { type: String, required: true },
+  author: { type: String, required: true },
 });
 
-const CookingTip = mongoose.model('cookingtip', cookingTipSchema);
+const CookingTip = mongoose.model('CookingTip', cookingTipSchema);
 
 module.exports = CookingTip;
 

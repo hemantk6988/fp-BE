@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 
 const culinaryExperienceSchema = new mongoose.Schema({
-  experience: String,
-  author: String,
+  experience: { type: String, required: true },
+  author: { type: String, required: true },
 });
 
 const CulinaryExperience = mongoose.model('CulinaryExperience', culinaryExperienceSchema);
