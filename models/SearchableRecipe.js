@@ -8,6 +8,6 @@ const searchableRecipeSchema = new mongoose.Schema({
   createdAt: { type: Date, default: Date.now }
 });
 
-const SearchableRecipe = mongoose.model('SearchableRecipe', searchableRecipeSchema);
+const SearchableRecipe = mongoose.model('searchableRecipe', searchableRecipeSchema);
 
 module.exports = SearchableRecipe;
